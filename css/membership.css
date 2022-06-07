@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #media-1024 {
+        display: block
+    }
+}
+
+body {
+    background-color: #7d9795;
+}
+
+.menu li {
+    z-index: 999 !important;
+}
+
+.join {
+    top: 0% !important;
+    left: 50% !important;
+    transform: translate(-55%, 26%) !important;
+}

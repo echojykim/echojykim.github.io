@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--viewport지정-->
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0">
+  <title>Membership</title>
+  <link rel="stylesheet" href="css/homestyle.css">
+  <link rel="stylesheet" href="css/membership.css">
+  <script src="js/verify.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gowun+Batang&family=Lancelot&family=Noto+Sans+KR&family=Noto+Sans+Mono:wght@800;900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap');
+  </style>
+</head>
+
+<!--html4에서 사용되던 기능. body에 style선언하기. 일단 이걸로 왼쪽 빈칸을 메움-->
+
+<body leftmargin="0" marginwidth="0" marginheight="0">
+
+  <div class="container">
+    <header class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="01_basicindex.html"><strong>Home</strong></a></li>
+          <li><a href="02_introduce.html"><strong>Introduce</strong></a></li>
+          <li><a href="03_exhibition.html"><strong>Exhibition</strong></a></li>
+          <li><a href="04_roadmap.html"><strong>Roadmap</strong></a></li>
+          <li><a href="05_membership.html"><strong>Membership</strong></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="list">
+      <div class="page_five">
+        <form action="javascript:saveMember()" name="joinFrm" class="join" method="POST">
+          <h2>회원가입</h2>
+          <div class="textform">
+            <input id="id" class="id" type="text" name="userId" placeholder="아이디 4~15글자 입력">
+          </div>
+          <div class="textform">
+            <input id="password" class="password" type="password" name="password" placeholder="비밀번호 8~12자리 입력">
+          </div>
+          <div class="textform">
+            <input id="password_a" class="password" type="password" name="pw-confirm" placeholder="비밀번호 확인">
+          </div>
+          <div class="textform">
+            <input id="username" class="username" type="text" name="username" placeholder="이름">
+          </div>
+          <div class="textform">
+            <input id="email" class="email" type="email" name="email" placeholder="이메일">
+          </div>
+          <div class="textform">
+            <input id="nickname" class="nickname" type="text" name="nickname" placeholder="닉네임">
+          </div>
+          <div class="textform">
+            <input id="tel" class="tel" type="tel" name="tel" placeholder="전화번호">
+          </div>
+          <div class="pressform">
+            <button type="submit" onclick="checkJoin();" id="pressbtn" class="press">J O I N</button>
+            <p class="textLogin">이미 계정이 있으신가요? &nbsp;
+              <a href="" class="checkLogin">지금 로그인하기</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

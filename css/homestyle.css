@@ -1,0 +1,406 @@
+body {
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    font-family: 'Pretendard-Thin';
+    color: #fce5e5;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* 네비게이션 */
+.menu * {
+    display: inline;
+}
+
+.menu li {
+    margin: 38px;
+}
+
+/*rgb(237, 237, 237) #fbe5e5;*/
+.menu li a {
+    /*메뉴 글씨색 그라데이션 기능 */
+    /*색의 그라디언트. 배경색을 투명하게 만들고 텍스트만 클립으로 따는 기능#ffc4ae*/
+    background: linear-gradient(to right top, #ffc0a9, #ffffff);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*왼쪽 여백 메우기*/
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+/* 1페이지 */
+.page_one {
+    background-size: cover;
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 140px;
+}
+
+.profile {
+    border-radius: 35%;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 30%;
+}
+
+
+/* 2페이지 */
+.page_two {
+    background-size: cover;
+    text-align: center;
+    padding-top: 350px;
+    padding-bottom: 150px;
+}
+
+.myself {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+
+.myself img {
+    max-width: 30%;
+    min-width: auto !important;
+    height: auto;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.myself-text {
+    margin-top: 35px;
+    padding-left: 2px;
+    font-weight: lighter;
+    color: #ffd3d0;
+}
+
+/* 3페이지 */
+.page_three * {
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 550px;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    font-family: 'Gowun Batang', serif;
+    /*font-family: 'Noto Sans KR', sans-serif;*/
+    color: rgb(246, 252, 255);
+    background: rgba(6, 6, 6, 0.547);
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(11, 11, 11, 0.264);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+    color: rgba(247, 244, 244, 0.856);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.page_three .footerInfo {
+    text-align: center;
+    vertical-align: bottom;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.ct {
+    margin-top: 80px;
+    font-family: 'Gowun Batang', serif;
+    text-decoration: none;
+    margin: 15px;
+    color: #d5d2d2;
+}
+
+#cr {
+    color: #d5d2d2;
+    font-family: 'Gowun Batang', serif;
+    margin: 15px;
+}
+
+
+/* 4페이지 */
+.page_four {
+    text-align: center;
+    align-items: center;
+}
+
+.roadMap img {
+    margin-bottom: -110px
+}
+
+/* 5페이지 */
+.page_five {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.join {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    top: 40%;
+    left: 60%;
+    transform: translate(-64%, 4%);
+}
+
+.join h2 {
+    color: #f7f1f1;
+    text-align: center;
+    margin: 30px;
+}
+
+.textform {
+    color: #e9eded;
+    /*밑줄색*/
+    border-bottom: 2px solid;
+    margin: 20px;
+    padding: 0px 0px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.id {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+/*placeholder 꾸미기*/
+.id::placeholder {
+    color: #f1f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.password {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.password::placeholder {
+    color: #f1f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.username {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.username::placeholder {
+    color: #f1f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.email::placeholder {
+    color: #f1f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nickname {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.nickname::placeholder {
+    color: #f1f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tel {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.tel::placeholder {
+    color: #f1f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.press {
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40px;
+    background: linear-gradient(125deg, #004545, #d1d8d9, #b2e0de);
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+}
+
+.press:hover {
+    background-position: right;
+}
+
+.pressform .textLogin,
+.checkLogin {
+    text-align: center;
+    color: #e6ecf2;
+    font-size: 14px;
+}

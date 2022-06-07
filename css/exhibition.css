@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #media-1024 {
+    display: block
+  }
+}
+
+body {
+  background-color: #45100a;
+}

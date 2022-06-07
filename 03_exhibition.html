@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--viewport지정-->
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0">
+  <title>Exhibition</title>
+  <link rel="stylesheet" href="css/homestyle.css">
+  <link rel="stylesheet" href="css/exhibition.css">
+  <script src="js/image_slide.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gowun+Batang&family=Lancelot&family=Noto+Sans+KR&family=Noto+Sans+Mono:wght@800;900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap');
+  </style>
+</head>
+
+<!--html4에서 사용되던 기능. body에 style선언하기. 일단 이걸로 왼쪽 빈칸을 메움-->
+
+<body leftmargin="0" marginwidth="0" marginheight="0">
+
+  <div class="container">
+    <header class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="01_basicindex.html"><strong>Home</strong></a></li>
+          <li><a href="02_introduce.html"><strong>Introduce</strong></a></li>
+          <li><a href="03_exhibition.html"><strong>Exhibition</strong></a></li>
+          <li><a href="04_roadmap.html"><strong>Roadmap</strong></a></li>
+          <li><a href="05_membership.html"><strong>Membership</strong></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--세번째 페이지 전시회-->
+    <!--이미지 슬라이드 기능+이미지 안에 텍스트가 같이 포함된 기능을 넣고싶음...-->
+    <!--JS기능까지 한번 시도해보자-->
+    <div class="list">
+      <div class="page_three">
+        <br><br><br><br><br><br>
+        <h3>내가 좋아하는 전시회</h3>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="image/딜라이트.jpg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>2021 딜라이트 서울</h2>
+              <p>2020.12.18(금)~2021.10.25(월)<br>
+                10:00~20:00 <br>
+                안녕 인사동<br></p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="image/앨리스달튼브라운.jpeg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>앨리스 달튼 브라운: 빛이 머무는 자리</h2>
+              <p>2021.07.24(토)~2021.11.07(일)<br>
+                10:00~20:00 <br>
+                마이아트 뮤지엄<br></p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="image/이건희컬렉션artcollection-01.jpg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>MMCA 이건희컬렉션 특별전: 한국미술명작</h2>
+              <p>2021.07.21(수)~2022.06.06(월)<br>
+                10:00~21:00 <br>
+                국립현대미술관 서울<br></p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="image/환기미술관.jpeg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>환기미술관 30주년 기념전</h2>
+              <p>2022.04.15(금)~2021.07.10(일)<br>
+                10:00~18:00 <br>
+                환기미술관<br></p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="image/우연히 웨스던.jpg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>우연히 웨스 앤더슨</h2>
+              <p>2021.11.27(토)~2022.07.24(일)<br>
+                10:00~19:00 <br>
+                그라운드시소 성수<br></p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="image/27qs5544p90q132830fi.jpg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>팀보타 머스타드 블루 '탐의 숲'</h2>
+              <p>2022.03.20(일)~2022.08.20(토)<br>
+                10:00~20:00 <br>
+                한화갤러리아포레<br></p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="image/아스테카＿170305.jpg" style="width: 550px; height:350px;">
+            <div class="text">
+              <h2>아스테카, 태양을 움직인 사람들</h2>
+              <p>2022.05.03(화)~2021.08.28(일)<br>
+                10:00~18:00 <br>
+                국립중앙박물관 1층 특별전시회<br>
+            </div>
+          </div>
+
+          <!-- 다음, 이전 버튼 항목 -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!--이미지 아래 동그라미 버튼-->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        <script src="js/image_slide.js"></script>
+        <br><br><br>
+
+        <footer class="footerInfo">
+          <p>
+            <a href="https://github.com/echojykim/programming" class="ct">Github</a>
+            <a href="mailto:inolante@naver.com" class="ct">Email</a>
+            <span id="cr">Copyright 2022. 김지윤. All Rights Reserved</span>
+          </p>
+        </footer>
+
+      </div>
+    </div>
+</body>
+</html>
